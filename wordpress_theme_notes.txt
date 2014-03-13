@@ -1,0 +1,20 @@
+Impulse:  Good look, would need to remove the title from the pages.  I'm completely ignoring the homepage setup, which is the whole point.  could be used if I could disable the slider.
+
+attitude: good look, the search bar isn't idiot-proof enough
+
+enough: I don't trust the maker cause the language is bad. also because if you show the header image and text together, they overlap.  seems like an idiot mistake to make.  might try again.  tried again: having trouble understanding what the theme is talking about, so I can't use it.  serious nonnative english problems.v
+
+tweaker4: don't like the sharp corners on the top and bottom bars. would prefer not to have dividing bars like this at all.
+
+reddle: can't figure out how to use it. also it has a design in the background
+
+twenty twelve: has main navigation on top of header…not so great.
+
+buffet: confused…can't have a header/logo, I think this is meant to be a blank framework for customizing?
+
+back to suburbia…but suburbia just sucks in this format.
+
+Hybrid: widget areas are named by function, not location, as if they're meant to be customized. but it's ugly.
+
+Smpl skeleton: working with this for now.  It's nice. can set typeface and put sidebar on either side of page and adjust the size.  cons: only one sidebar widget area, whereas I want two (but only if I need left navigation, right?).  But I could just make columns, right?
+  -css abuses the !important tag, perhaps signs that there will be other bad code, also annoying in itself.  could be fixed in child theme.
