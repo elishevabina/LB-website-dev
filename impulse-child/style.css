@@ -1,0 +1,16 @@
+/*
+Theme Name: Impulse Child
+Theme URI: 
+Description: Child theme of Impulse for the LimmudBoston website.
+Author: Ellie Ash
+Author URI:
+Template: impulse
+Version: 1.0.0
+Tags:
+Text Domain: impulse-child
+*/
+
+@import url("../impulse/style.css");
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */

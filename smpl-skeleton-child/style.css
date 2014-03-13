@@ -1,0 +1,17 @@
+/*
+Theme Name: Smpl Skeleton Child
+Theme URI: 
+Description: Child theme of Smpl Skeleton for the LimmudBoston website.
+Author: Ellie Ash
+Author URI:
+Template: smpl-skeleton
+Version: 1.0.0
+Tags:
+Text Domain: smpl-skeleton-child
+*/
+
+@import url("../smpl-skeleton/style.css");
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+

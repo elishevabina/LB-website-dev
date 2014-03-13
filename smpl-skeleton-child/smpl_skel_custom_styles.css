@@ -1,0 +1,135 @@
+/*For Smpl Skeleton*/
+
+body {
+       background-image: none;
+}
+
+#searchform input#s {
+	float: left;
+	-webkit-border-radius:4px 0px 0px 4px;
+	-moz-border-radius:4px 0px 0px 4px;
+	border-radius:4px 0px 0px 4px;
+	height: 22px;
+        /*background-color: green; this works as expected*/
+}
+
+/*the button that says "search" in it --need to use !important for some things to counter the theme's !important other places.  dumb theme, maybe find another?*/
+#searchform #searchsubmit {
+	margin:0;
+        padding:0; 
+	-webkit-border-radius:0px 4px 4px 0px;
+	-moz-border-radius:0px 4px 4px 0px;
+	border-radius:0px 4px 4px 0px;
+	height: 22px; 
+        font-size: 60% !important;
+        background-color: green !important; /*unclear why this does nothing
+}
+#content #searchform label {
+	float: left;
+	line-height: 22px;
+	height: 22px;
+	padding-right: 10px;
+       
+}*/
+
+#header, #header_container {
+        background-color: #08204c;
+        margin-top: 0 !important;
+        height: 70%;
+}
+
+
+/*
+#header .inner {
+        padding: 0;
+}
+
+#header .header-extras {
+        margin-top: 10em !important; /*does nothing
+}
+
+
+/* mucking with the main navigation to make "buttons"*/
+
+#navigation ul,
+#navigation ul li {
+	float: none;
+	margin: 0;
+	padding: 0;
+}
+
+#navigation ul {
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+ 	background: -moz-linear-gradient(270deg, #FCFCFC, #ECECEC) repeat scroll 0 0 transparent;
+ 	background: -webkit-linear-gradient(270deg, #FCFCFC, #ECECEC) repeat scroll 0 0 transparent;
+	-pie-background: linear-gradient(#FCFCFC, #ECECEC);
+    border-color: #EAEAEA #F5F5F5 #F5F5F5 #F5F5F5;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+     border-radius: 5px 5px 5px 5px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    -pie-box-shadow: 0 1px 1px #ccc;
+    position: relative;
+    behavior: url("./wp-content/themes/skeleton/PIE.php");
+}
+
+#navigation ul li {
+        float: left;
+        -webkit-border-radius:15%;
+	-moz-border-radius: 15%;
+	border-radius:15%;
+        margin: .3em;
+}
+
+/*hot buttons -- unclear if "menu-item-94" is static, this probably won't work next time around.*/
+#navigation ul li#menu-item-94 {
+        background-color: red;
+	background-image: none;
+	border-right: 1px solid #e3e3e3;
+    position: relative;
+    behavior: url("./wp-content/themes/skeleton/PIE.php");
+}
+
+#navigation ul li#menu-item-96 {
+        float: left;
+ 	background-color: green;
+	background-image: none;
+	border-right: 1px solid #e3e3e3;
+    position: relative;
+    behavior: url("./wp-content/themes/skeleton/PIE.php");
+}
+
+#navigation ul li#menu-item-95 {
+        float: left;
+ 	background-color: yellow;
+	background-image: none;
+	border-right: 1px solid #e3e3e3;
+    position: relative;
+    behavior: url("./wp-content/themes/skeleton/PIE.php");
+}
+
+
+#navigation ul li a {
+        color: black;
+	background-image: none;
+	padding: 15px 20px;
+	text-decoration: none;
+	display: block;
+	font-weight: bold;
+	text-shadow: none;
+}
+
+#navigation ul li#menu-item-96 a {
+      color: white;
+      text-shadow: 1px 1px 0px #000;
+}
+
+/* hide the home page title.  */
+.home .entry-title {
+        display: none;
+}
+
