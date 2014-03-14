@@ -1,0 +1,34 @@
+3/11/14
+
+What I learned today:
+
+the best way to hide/show a title on a specific page is using css with the proper selector
+
+it is very easy to make a child theme by following the instructions
+
+templates have straight up html code in them for the structure (the template), plus php which mostly calls functions that give you the content you need in a particular place.  
+
+So if you want to show/hide particular elements, you can find them and change them just like in an html document.
+
+some functions (the basic wordpress-defined ones?) include a "do_action" call which is a "hook" for actions you want to add, because do_action($tag, $args) will execute all the functions you (or someone) have associated with the $tag in some other place (where?) using the add_action() function.  
+
+Things I learned this past week/end:
+
+It's pretty common for themes to use the !important tag but some use it more than others.  There might even be legitimate reasons to use it.
+
+!important causes the statement to override just about anything except another !important tag.
+
+id selectors have strictly higher specificity than class selectors, even if the class selector is a child of the id selector.  Styles attached to selectors of higher specificity overrides those with lower specificity.
+
+css-tricks.com is a good website.
+
+reminder: for a css selector a space means "child of".  
+
+3/13
+What I learned today:
+There are stylesheets that are part of plugins(?) that the Impulse theme uses that load *after* my theme stylesheet, so they override it.  One of these is Foundation which is currently controlling the text color, among other things.  Probably most of the styling.  Fat lot of good having a child theme does.  
+
+These stylesheets are registered and loaded in functions.php, onto the hook 'wp_print_styles'.  
+  Could be changed by directly customizing these css files and then loading those, instead. (Sounds like a hack.)  Or by attaching it to a different hook so that it loads sooner?  Or maybe somehow making my own stylesheet load later?  (Also sound like hacks.)
+   From the Wordpress Codex: "wp_print_styles should not be used to enqueue styles or scripts on the front page. Use wp_enqueue_scripts instead."
+  From the fora: http://wordpress.stackexchange.com/questions/2680/best-way-to-overide-plugin-css
