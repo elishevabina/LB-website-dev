@@ -14,3 +14,34 @@ Text Domain: impulse-child
 
 /* =Theme customization starts here
 -------------------------------------------------------------- */
+
+/*header*/
+#header, #header_container {
+        background-color: #08204c;
+       /* margin-top: 0 ;
+        height: 70%;*/
+}
+
+/*main navigation */
+
+/*at the moment #nav is a ul*/
+#nav {
+        color: white;
+}
+
+#nav li ul {
+	    color:	#000;
+	
+}
+
+#nav li:hover, #nav li.sfHover,
+#nav a:focus, #nav a:hover, #nav a:active {
+	outline: 0;
+	color: #aaa;
+	
+}
+
+/*Home page --temporary-- */
+.home #subhead_container {
+       display: none;
+}
