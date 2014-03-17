@@ -41,8 +41,10 @@ If it breaks things, that's a fault in impulse, right? -->
 	<?php } ?>
 			
 	</div>
-	
-	<!--top menu-->
+		</div> <!--row end.  Moved in child theme.-->
+		
+	<!--top menu--><!--this is inside header_container and outside row, meaning it's no longer a sibling of the logo. 
+	For some reason this also seems to put it outside the border of header_container?-->
 			<div class="nine columns" id="menu_container" >
 		
 		<?php $navcheck = '' ; ?>
@@ -61,7 +63,7 @@ If it breaks things, that's a fault in impulse, right? -->
 	</div>
 	
 	
-		</div>
+	
 		
 	</div><!--header container end-->	
 			

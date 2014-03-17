@@ -20,18 +20,30 @@ body {
         }
         
 /*header*/
-#header, #header_container {
+#header_container {
+        border: solid;
+        border-color: magenta;
+        }
+        
+#header_container .row {
         background-color: #08204c;
        /* margin-top: 0 ;
         height: 70%;*/
 }
 
+
+
 /*main navigation */
+
+#menu_container {
+        float: right;
+        }
 
 /*at the moment #nav is a ul*/
 
 #nav a, #nav a:visited {
-        color: white;
+        color: black;
+        font-size: 1.1em;
 }
 
 #nav li ul {
