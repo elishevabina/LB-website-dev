@@ -30,5 +30,21 @@ There are stylesheets that are part of plugins(?) that the Impulse theme uses th
 
 These stylesheets are registered and loaded in functions.php, onto the hook 'wp_print_styles'.  
   Could be changed by directly customizing these css files and then loading those, instead. (Sounds like a hack.)  Or by attaching it to a different hook so that it loads sooner?  Or maybe somehow making my own stylesheet load later?  (Also sound like hacks.)
+
    From the Wordpress Codex: "wp_print_styles should not be used to enqueue styles or scripts on the front page. Use wp_enqueue_scripts instead."
+
   From the fora: http://wordpress.stackexchange.com/questions/2680/best-way-to-overide-plugin-css
+
+Changed by overriding header.php to load the stylesheet after calling wp_head().  There is a problem because for some reason the impulse style.css has styles that were overridden by foundation.css.  This fix also breaks Simple Custom CSS, but I'll just use the child theme files directly.  Although that is less convenient…hmm.
+
+3/15
+Using FTP through commandline:  
+connect with `ftp 192.186.253.132`
+username limmudwordpress (maybe other things would work too?)
+lcd = local change directory
+cd = change directory (remote)
+put = put
+
+3/16
+"of" in function names might stand for "options framework", a framework impulse seems to use.
+
