@@ -14,7 +14,11 @@ Text Domain: impulse-child
 
 /* =Theme customization starts here
 -------------------------------------------------------------- */
-
+/*defaults*/
+body {
+        color: black;
+        }
+        
 /*header*/
 #header, #header_container {
         background-color: #08204c;
@@ -25,13 +29,13 @@ Text Domain: impulse-child
 /*main navigation */
 
 /*at the moment #nav is a ul*/
-#nav {
+
+#nav a, #nav a:visited {
         color: white;
 }
 
 #nav li ul {
 	    color:	#000;
-	
 }
 
 #nav li:hover, #nav li.sfHover,
@@ -41,7 +45,35 @@ Text Domain: impulse-child
 	
 }
 
+#nav li li a {
+	background:	#e4e4e4; /*same as superfish for now*/
+	border-bottom: 1px solid #aaa; /*same as superfish for now*/
+	color: #333;
+}
+
+#nav li li a:visited {
+	color: #333;
+}
+
+#nav li ul li:hover, #nav li ul li.sfHover,
+#nav li ul li a:focus, #nav li ul li a:hover, #nav li ul li a:active {
+	outline: 0;
+	color: #33f;
+}
+
+
+
 /*Home page --temporary-- */
 .home #subhead_container {
        display: none;
 }
+
+/*Home (index.php)*/
+#slider_container {
+        display: none;
+        }
+        
+.box-content {
+        width: 100%;   /*ensures that the slideshow fills out the box_container*/
+        border: solid;
+        }
