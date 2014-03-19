@@ -2,18 +2,20 @@
 1.reduce number of "boxes" to 2 and change each box's outside div class to "six columns"
 2. Remove box heads.
 3. Comment out "read more"
-4. add do_shortcode inside the box_text so that it can parse shortcodes (to display slideshow)
 -->
 
-			<?php for ($i = 1; $i <= 2; $i++) { ?>
-		
-				<div class="six columns">
-				
+			<?php for ($i = 1; $i <= 4; $i++) { ?>
+		  
+				<?php if ($i==1 or $i==3) : ?>
+                                    <div class="row">
+                                <?php endif; ?>
+                                <div class="five columns">
 					
 				<div class="title-box">						
-						
-				<div class="title-head"><h1><?php if(of_get_option('box_head' . $i) != NULL)
-				    { echo of_get_option('box_head' . $i);} else echo "Box heading" ?></h1></div></div>
+					<?php echo '<div class="title-head" id="box-header-'.$i.'">';?>
+	
+				                                    <h1><?php if(of_get_option('box_head' . $i) != NULL)
+				    { echo of_get_option('box_head' . $i);}  ?></h1></div></div>
 					
 					<div class="box-content">
 
@@ -22,7 +24,11 @@
 					</div> <!--box-content close-->
 					
 				<!--<span class="read-more"><a href="<?php echo of_get_option('box_link' . $i); ?>"><?php _e('Read More' , 'impulse'); ?></a></span>-->
-			
+			        
+                                <?php if ($i==2 or $i==4) : ?>
+                                    </div>
+                                <?php endif; ?> 
+ 
 				</div><!--boxes  end-->
 				
 		<?php } ?>
