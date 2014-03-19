@@ -31,7 +31,7 @@ If it breaks things, that's a fault in impulse, right? -->
 	<div id="header_container">
 	
 		<!--header-->
-	<div class="row">	
+	<div class="row" id="banner">	
 		<div class="three columns">
 
 				<?php if ( ( of_get_option('logo_image') ) != '' ) { ?>
@@ -43,9 +43,10 @@ If it breaks things, that's a fault in impulse, right? -->
 	</div>
 		</div> <!--row end.  Moved in child theme.-->
 		
-	<!--top menu--><!--this is inside header_container and outside row, meaning it's no longer a sibling of the logo. 
-	For some reason this also seems to put it outside the border of header_container?-->
-			<div class="nine columns" id="menu_container" >
+	<!--top menu--><!--this is inside header_container and outside row, meaning it's no longer a sibling of the logo.
+	Instead it's a sibling of div.row.  Changed the grid layout to match.-->
+		
+			    <div class="row" id="menu_container" >
 		
 		<?php $navcheck = '' ; ?>
 	
@@ -60,8 +61,8 @@ If it breaks things, that's a fault in impulse, right? -->
 	</ul>
 <?php } else echo($navcheck); ?>  
 
-	</div>
-	
+	</div><!--menu_container end-->
+
 	
 	
 		

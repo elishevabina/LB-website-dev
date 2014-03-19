@@ -17,15 +17,23 @@ Text Domain: impulse-child
 /*defaults*/
 body {
         color: black;
+        background-color: blue !important;
         }
         
+#header_container, #welcome_container, #box_container, #footer-container {
+    background-color: transparent;
+
+}
 /*header*/
 #header_container {
         border: solid;
         border-color: magenta;
-        }
+        position: relative;
+        height: auto;
+
+}
         
-#header_container .row {
+#banner {
         background-color: #08204c;
        /* margin-top: 0 ;
         height: 70%;*/
@@ -36,10 +44,19 @@ body {
 /*main navigation */
 
 #menu_container {
-        float: right;
+        position: static;
+        border-style: solid;
+       /* overflow: auto;*/
+        padding: 0;
         }
 
 /*at the moment #nav is a ul*/
+
+
+#nav { 
+     float: none;
+     border: solid red;
+     }
 
 #nav a, #nav a:visited {
         color: black;
@@ -73,6 +90,7 @@ body {
 	color: #33f;
 }
 
+@import url("css/white_header.css");
 
 
 /*Home page --temporary-- */
