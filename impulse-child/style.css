@@ -17,11 +17,11 @@ Text Domain: impulse-child
 /*defaults*/
 body {
         color: black;
-        background-color: blue !important;
+        
         }
         
 #header_container, #welcome_container, #box_container, #footer-container {
-    background-color: transparent;
+   background: transparent;
 
 }
 /*header*/

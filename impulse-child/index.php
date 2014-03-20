@@ -58,10 +58,10 @@
 <!-- home boxes-->
 <?php if(is_front_page()) { ?>
 	
-	<!--<div class="row" id="box_container">-->
+	<div id="box_container">
 
 			<?php get_template_part( 'element-boxes', 'index' ); ?>
-	<!--</div>-->
+	</div>
 
     
 <!-- home boxes end -->
