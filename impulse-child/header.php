@@ -31,9 +31,10 @@ If it breaks things, that's a fault in impulse, right? -->
 	<div id="header_container">
 	
 		<!--header-->
-	<div class="row" id="banner">	
-		<div class="three columns">
-
+	<div class="row" id="banner">
+		<!-- a section for the logo -->
+		<div class="four columns">
+     
 				<?php if ( ( of_get_option('logo_image') ) != '' ) { ?>
 		<div id="logo"><a href="<?php echo esc_url(home_url()); ?>" title="<?php bloginfo('description'); ?>"><img src="<?php echo of_get_option('logo_image'); ?>" alt="<?php echo of_get_option('footer_cr'); ?>" /></a></div><!--logo end-->
 	<?php } else { ?>
@@ -41,7 +42,20 @@ If it breaks things, that's a fault in impulse, right? -->
 	<?php } ?>
 			
 	</div>
-		</div> <!--row end.  Moved in child theme.-->
+	
+	<!--  the header text and extras (chiclets) -->
+	<?php if ( ( of_get_option('header_text') ) != '' ) { ?>
+	    <div class="six columns" id="header_text">
+	    <?php echo of_get_option('header_text'); ?>
+	</div> <?php } ?>
+	    
+	<?php if ( ( of_get_option('header_extras') ) != '' ) { ?>
+	    <div id="header_extras">
+	    <?php echo of_get_option('header_extras'); ?>
+	</div> <?php } ?>
+	
+	
+	</div> <!--row end.  -->
 		
 	<!--top menu--><!--this is inside header_container and outside row, meaning it's no longer a sibling of the logo.
 	Instead it's a sibling of div.row.  Changed the grid layout to match.-->

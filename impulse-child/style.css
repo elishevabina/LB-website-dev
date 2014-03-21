@@ -20,14 +20,12 @@ body {
         
         }
         
-#header_container, #welcome_container, #box_container, #footer-container {
+#header_container, #slider_container, #welcome_container, #box_container, #footer-container {
    background: transparent;
 
 }
 /*header*/
 #header_container {
-        border: solid;
-        border-color: magenta;
         position: relative;
         height: auto;
 
@@ -35,19 +33,39 @@ body {
         
 #banner {
         background-color: #08204c;
-       /* margin-top: 0 ;
-        height: 70%;*/
+        color: white;
 }
 
+#header_text {
+        text-align: center;
+        line-height: 148px;
+        font-size: 1.4em;
+        
+}
+
+#header_buttons {
+        display: none;
+}
+
+#header_extras {
+        float: right;
+        text-align: right;
+        padding: 0.4em;
+}
+
+img.chiclet {
+        width: 35px;
+        padding: 0.3em;
+        }
 
 
 /*main navigation */
 
 #menu_container {
         position: static;
-        border-style: solid;
        /* overflow: auto;*/
         padding: 0;
+        background-color: #ddd;
         }
 
 /*at the moment #nav is a ul*/
@@ -55,7 +73,6 @@ body {
 
 #nav { 
      float: none;
-     border: solid red;
      }
 
 #nav a, #nav a:visited {
@@ -90,20 +107,45 @@ body {
 	color: #33f;
 }
 
-@import url("css/white_header.css");
-
-
-/*Home page --temporary-- */
-.home #subhead_container {
-       display: none;
+/*white header
+#banner {
+        background-color: inherit;
+        color: black;
 }
+
+#header_text {
+        line-height: initial;
+    }
+#header_text p {
+        font-size: 1em;
+}
+
+.button {
+        margin: 1em;
+        border-radius: 10%;
+}
+
+#menu_container {
+    background-color: #338;
+}
+
+#nav a, #nav a:visited {
+        color: white;
+        font-size: 1.1em;
+}
+
+#header_buttons {
+    display: initial;
+    float: none;
+}
+/*end white header*/
+
 
 /*Home (index.php)*/
 #slider_container {
         display: none;
-        }
+}
         
 .box-content {
         width: 100%;   /*ensures that the slideshow fills out the box_container*/
-        border: solid;
-        }
+}
