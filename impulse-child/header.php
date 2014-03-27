@@ -13,15 +13,10 @@
 
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-	
-	<?php wp_head(); ?>
-<!-- move loading of stylesheet below wp_head() so that my stylesheet will trump foundation.css and superfish.css-->
-<!-- but this will also make the impulse parent stylesheet trump those...but that seems more logical anyway. 
-If it breaks things, that's a fault in impulse, right? -->
-			
+<?php wp_head(); ?>
+<!-- move loading of stylesheet below wp_head() so that my stylesheet will trump foundation.css and superfish.css. this will also make the impulse parent stylesheet trump those...but that seems more logical anyway. If it breaks things, that's a fault in impulse, right? -->		
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_stylesheet_uri(); ?>" />
 
-	
 
 </head>
 
@@ -73,7 +68,13 @@ If it breaks things, that's a fault in impulse, right? -->
 		<?php wp_list_pages('title_li=&sort_column=menu_order'); ?>
 
 	</ul>
-<?php } else echo($navcheck); ?>  
+<?php } else echo($navcheck); ?>
+
+   <ul id="tempButtons"> 
+       <li class="red"> Register </li>
+       <li class="blue"> Volunticipate </li>
+       <li class="green"> Offer Session </li> 
+    </ul>
 
 	</div><!--menu_container end-->
 
