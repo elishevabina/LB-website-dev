@@ -1,0 +1,109 @@
+/*
+Theme Name: Impulse Child
+Theme URI: 
+Description: Child theme of Impulse for the LimmudBoston website.
+Author: Ellie Ash
+Author URI:
+Template: impulse
+Version: 1.0.0
+Tags:
+Text Domain: impulse-child
+*/
+
+@import url("../impulse/style.css");
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+/*defaults*/
+body {
+        color: black;
+        
+        }
+        
+#header_container, #welcome_container, #box_container, #footer-container {
+   background: transparent;
+
+}
+/*header*/
+#header_container {
+        border: solid;
+        border-color: magenta;
+        position: relative;
+        height: auto;
+
+}
+        
+#banner {
+        background-color: #08204c;
+       /* margin-top: 0 ;
+        height: 70%;*/
+}
+
+
+
+/*main navigation */
+
+#menu_container {
+        position: static;
+        border-style: solid;
+       /* overflow: auto;*/
+        padding: 0;
+        }
+
+/*at the moment #nav is a ul*/
+
+
+#nav { 
+     float: none;
+     border: solid red;
+     }
+
+#nav a, #nav a:visited {
+        color: black;
+        font-size: 1.1em;
+}
+
+#nav li ul {
+	    color:	#000;
+}
+
+#nav li:hover, #nav li.sfHover,
+#nav a:focus, #nav a:hover, #nav a:active {
+	outline: 0;
+	color: #aaa;
+	
+}
+
+#nav li li a {
+	background:	#e4e4e4; /*same as superfish for now*/
+	border-bottom: 1px solid #aaa; /*same as superfish for now*/
+	color: #333;
+}
+
+#nav li li a:visited {
+	color: #333;
+}
+
+#nav li ul li:hover, #nav li ul li.sfHover,
+#nav li ul li a:focus, #nav li ul li a:hover, #nav li ul li a:active {
+	outline: 0;
+	color: #33f;
+}
+
+@import url("css/white_header.css");
+
+
+/*Home page --temporary-- */
+.home #subhead_container {
+       display: none;
+}
+
+/*Home (index.php)*/
+#slider_container {
+        display: none;
+        }
+        
+.box-content {
+        width: 100%;   /*ensures that the slideshow fills out the box_container*/
+        border: solid;
+        }

@@ -24,6 +24,9 @@ body {
    background: transparent;
 
 }
+
+
+
 /*header*/
 #header_container {
         position: relative;
@@ -40,7 +43,11 @@ body {
         text-align: center;
         line-height: 148px;
         font-size: 1.4em;
-        
+        padding-top: 1em;
+}
+
+#header_text p {		/*tagline*/
+        font-family: arial;
 }
 
 #header_buttons {
@@ -61,11 +68,12 @@ img.chiclet {
 
 /*main navigation */
 
-#menu_container {
+#menu_container {  /*currently being used just as a decorative blue bar*/
         position: static;
        /* overflow: auto;*/
         padding: 0;
         background-color: #ddd;
+        height: 2.5em;
         }
 
 /*at the moment #nav is a ul*/
@@ -73,6 +81,7 @@ img.chiclet {
 
 #nav { 
      float: none;
+     display: none; /*we're switching back to left navigation.*/
      }
 
 #nav a, #nav a:visited {
@@ -187,3 +196,7 @@ img.chiclet {
 .box-content {
         width: 100%;   /*ensures that the slideshow fills out the box_container*/
 }
+
+div.title-box {
+    text-transform: none;
+    }

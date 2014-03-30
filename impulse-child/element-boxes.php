@@ -1,36 +1,40 @@
 <!--this template has been changed in impulse-child.  Specifically: 
-1.reduce number of "boxes" to 2 and change each box's outside div class to "six columns"
+1.reduce number of "boxes" to 2 and change each box's outside div class to "five columns"
 2. Remove box heads.
 3. Comment out "read more"
 -->
-
-			<?php for ($i = 1; $i <= 4; $i++) { ?>
+  
+		<?php for ($i = 1; $i <= 4; $i++) { ?>
 		  
-				<?php if ($i==1 or $i==3) : ?>
-                                    <div class="row">
-                                <?php endif; ?>
-                                <div class="five columns">
+			<?php if ($i==1 or $i==3) : ?>
+                  <div class="row">
+            <?php endif; ?>
+                
+             <div class="five columns">
 					
 				<div class="title-box">						
 					<?php echo '<div class="title-head" id="box-header-'.$i.'">';?>
 	
-				                                    <h1><?php if(of_get_option('box_head' . $i) != NULL)
-				    { echo of_get_option('box_head' . $i);}  ?></h1></div></div>
+				     <h1><?php if(of_get_option('box_head' . $i) != NULL)
+				    { echo of_get_option('box_head' . $i);}  ?></h1>
+				</div></div><!--title-box and title-head close-->
 					
-					<div class="box-content">
+				<div class="box-content">
 
 				<?php if(of_get_option('box_text' . $i) != NULL)
 				    { echo do_shortcode( of_get_option('box_text' . $i) );} ?>
-					</div> <!--box-content close-->
+				</div> <!--box-content close-->
 					
 				<!--<span class="read-more"><a href="<?php echo of_get_option('box_link' . $i); ?>"><?php _e('Read More' , 'impulse'); ?></a></span>-->
 			        
-                                <?php if ($i==2 or $i==4) : ?>
-                                    </div>
-                                <?php endif; ?> 
+			</div> <!-- five columns close -->
+				
+                <?php if ($i==2 or $i==4) : ?> <!--put boxes 3&4 on separate line-->
+                    </div> <!--row close-->  
+                <?php endif; ?> 
  
-				</div><!--boxes  end-->
 				
 		<?php } ?>
+	
 			
-	<div class="clear"></div>
+	<!--<div class="clear"></div>-->

@@ -1,0 +1,16 @@
+#header_container {
+        background-color: inherit;
+}
+
+#banner {
+        background-color: inherit;
+}
+
+#menu_container {
+    background-color: #08204c;
+}
+
+#nav a, #nav a:visited {
+        color: white;
+        font-size: 1.1em;
+}

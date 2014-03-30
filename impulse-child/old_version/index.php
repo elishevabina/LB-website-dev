@@ -42,29 +42,25 @@
 
 <?php } ?> <!-- slider end -->
 
-<!--welcome:  moved to above the boxes. whole div only displays if there is a welcome text or button-->
-	<?php if((of_get_option('welcome_text') != NULL) or (of_get_option('welcome_button') != NULL) ): ?> 
+<!--welcome  moved to above the boxes.-->
 	<div class="row" id="welcome_container">
 <hr />
 		<div class="nine columns">
 		
-	<h1><?php { echo of_get_option('welcome_text');} ?></h1></div>
+	<h1><?php if(of_get_option('welcome_text') != NULL){ echo of_get_option('welcome_text');} ?></h1></div>
 	
 	<div class="three columns"><?php if(of_get_option('welcome_button') != NULL){ ?> 
 	<a class="button large" href="<?php if(of_get_option('welcome_button_link') != NULL){ echo of_get_option('welcome_button_link');} ?>"><?php echo of_get_option('welcome_button'); ?></a> 
 	<?php } else { }?> </div>
-</div>
-<?php endif;?> <!--welcome end--> 
+</div><!--welcome end--> 
 
 
 <!-- home boxes-->
 <?php if(is_front_page()) { ?>
 	
-	<div class="row" id="box_container">
-        <div class="eight columns"
+	<div id="box_container">
+
 			<?php get_template_part( 'element-boxes', 'index' ); ?>
-		</div>
-			<?php get_sidebar(); ?> 
 	</div>
 
     
