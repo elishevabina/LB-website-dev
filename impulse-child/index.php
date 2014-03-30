@@ -42,6 +42,7 @@
 
 <?php } ?> <!-- slider end -->
 
+
 <!--welcome:  moved to above the boxes. whole div only displays if there is a welcome text or button-->
 	<?php if((of_get_option('welcome_text') != NULL) or (of_get_option('welcome_button') != NULL) ): ?> 
 	<div class="row" id="welcome_container">
@@ -61,8 +62,10 @@
 <?php if(is_front_page()) { ?>
 	
 	<div class="row" id="box_container">
-	<?php get_sidebar(); ?> 
-        <div class="eight columns"
+	<div class="four columns" >
+	    <?php get_template_part( 'navigation' ); ?> 
+    </div>
+        <div class="eight columns">
 			<?php get_template_part( 'element-boxes', 'index' ); ?>
 		</div>
 			

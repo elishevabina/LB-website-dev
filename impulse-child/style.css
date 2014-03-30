@@ -34,9 +34,10 @@ body {
 
 }
         
+
 #banner {
-        background-color: #08204c;
-        color: white;
+        background-color: inherit;
+        color: black;
 }
 
 #header_text {
@@ -72,18 +73,19 @@ img.chiclet {
         position: static;
        /* overflow: auto;*/
         padding: 0;
-        background-color: #ddd;
+        background-color: #338;
         height: 2.5em;
         }
-
-/*at the moment #nav is a ul*/
 
 
 #nav { 
      float: none;
-     display: none; /*we're switching back to left navigation.*/
      }
-
+     
+#nav li {
+    float: none;
+    }
+    
 #nav a, #nav a:visited {
         color: black;
         font-size: 1.1em;
@@ -116,27 +118,10 @@ img.chiclet {
 	color: #33f;
 }
 
-#tempButtons{
-   float: right;
-   font-weight: bold;
-}
 
-#tempButtons li {
-    float: right;
-    padding: 1em;
-}
-   
-   
-#tempButtons .blue {
-    color: blue;
-}
-
-#tempButtons .red {
-    color: red;
-}
-
-#tempButtons .green {
-    color: green;
+#nav li.current_page_item a,
+#nav li.current-cat a {
+	color: black;
 }
 
 /*white header*/
@@ -145,10 +130,7 @@ img.chiclet {
     display: none;
 }
 
-#banner {
-        background-color: inherit;
-        color: black;
-}
+
 
 #logo img {
         margin-bottom: 10px;
@@ -167,19 +149,7 @@ img.chiclet {
         border-radius: 10%;
 }
 
-#menu_container {
-    background-color: #338;
-}
 
-#nav a, #nav a:visited {
-        color: white;
-        font-size: 1.1em;
-}
-
-#nav li.current_page_item a,
-#nav li.current-cat a {
-	color: black;
-}
 
 #header_buttons {
     display: initial;
