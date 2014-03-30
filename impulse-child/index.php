@@ -61,10 +61,11 @@
 <?php if(is_front_page()) { ?>
 	
 	<div class="row" id="box_container">
+	<?php get_sidebar(); ?> 
         <div class="eight columns"
 			<?php get_template_part( 'element-boxes', 'index' ); ?>
 		</div>
-			<?php get_sidebar(); ?> 
+			
 	</div>
 
     

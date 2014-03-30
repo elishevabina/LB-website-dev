@@ -1,24 +1,25 @@
 <?php get_header(); ?>
 
-	<div id="subhead_container">
+	<!--div id="subhead_container">
 		
 		<div class="row">
 
 		<div class="twelve columns">
 		
-		<!--- <h1><?php the_title(); ?></h1> --->
+		 
 			
 			</div>	
 			
-	</div></div>
+	</div></div-->
 	
 		<!--content-->
 		<div class="row" id="content_container">
+		<?php get_sidebar(); ?>
 			
-			<!--left col--><div class="eight columns">
+			<!--right col--><div class="eight columns">
 		
 				<div id="left-col">
-		
+		            <h1><?php the_title(); ?></h1> 
 
 				<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 					
@@ -30,13 +31,13 @@
 						
 					</div><!--post-entry end-->
 					
-					<?php comments_template( '', true ); ?>
+					<!--?php comments_template( '', true ); ?-->
 
 <?php endwhile; ?>
 	</div> <!--left-col end-->
 </div> <!--column end-->
 
-<?php get_sidebar(); ?>
+
 
 </div>
 <!--content end-->
