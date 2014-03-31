@@ -1,7 +1,8 @@
-<div class="three columns" id="nav_container">
+<div class="two columns" id="nav_container">
 
 <?php $navcheck = '' ; ?>
-	
+
+<!--renamed the nav menu #nav_left to avoid triggering superfish.-->	
 	<?php $navcheck = wp_nav_menu( array( 'container_class' => 'menu-header2', 'theme_location' => 'primary' , 
 	'menu_id' => 'nav_left', 'fallback_cb' => '', 'echo' => false ) ); ?>
 

@@ -19,7 +19,10 @@ body {
         color: black;
         }
         
-#slider_container, #welcome_container, #box_container, #footer-container {
+.column, .columns {
+    border: solid blue !important;
+}
+/*#slider_container, #welcome_container, #box_container, #footer_container {
    background: white;
 }
 
@@ -27,10 +30,7 @@ body {
     background: transparent;
 }
 
-.row {
-    background-color: white;
-    }
-
+*/
 
 
 /*header*/
@@ -104,53 +104,44 @@ img.chiclet {
     }
 
 
-#nav { 
+#nav_left { 
      float: none;
      text-transform: uppercase;
      font-family:  arial, sans;
+     color: maroon;
 }
      
-#nav li {
-    float: none;
+#nav_left li {
+    padding-top: .9em;
     }
     
-#nav a, #nav a:visited {
-        color: #338;
-        font-size: 1.1em;
+#nav_left a, #nav_left a:visited {
+        color: inherit;
+        font-size: 1em;
 }
 
-#nav li ul {
-	    color:	#338;
-	    visibility: visible;
-	    position: static;
+#nav_left li ul li {
+	    font-size: 0.85em;
+	    padding-top: .3em;
+	    color: inherit;
 }
 
-#nav li:hover, #nav li.sfHover,
-#nav a:focus, #nav a:hover, #nav a:active {
+#nav_left li a:hover, 
+#nav_left a:focus, #nav_left a:hover, #nav_left a:active {
 	outline: 0;
-	color: #33f;
-	
+	color: #338;
 }
 
-#nav li li a {
-	background:	#e4e4e4; /*same as superfish for now*/
-	border-bottom: 1px solid #aaa; /*same as superfish for now*/
-	color: #333;
-}
 
-#nav li li a:visited {
-	color: #333;
-}
-
-#nav li ul li:hover, #nav li ul li.sfHover,
-#nav li ul li a:focus, #nav li ul li a:hover, #nav li ul li a:active {
+#nav_left li ul li a:hover, 
+#nav_left li ul li a:focus, #nav_left li ul li a:hover, #nav_left li ul li a:active {
 	outline: 0;
-	color: #33f;
+	color: #338;
 }
 
 
-#nav li.current_page_item a,
-#nav li.current-cat a {
+#nav_left li.current_page_item > a,
+#nav_left li.current-cat > a {
 	color: black;
 }
 
@@ -202,3 +193,12 @@ div.title-box {
     }
     
 /*pages*/
+
+/*footer*/
+#footer-widget .widget-container h3 {
+    font-size: 14px;
+}
+
+#footer-widget .textwidget p {
+    font-size: 12px;
+}

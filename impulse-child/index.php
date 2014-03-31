@@ -66,10 +66,11 @@
 	    <?php get_template_part( 'navigation' ); ?> 
 	    <!--?php the_widget( 'WP_Nav_Menu_Widget' ); ?-->
 
-        <div class="nine columns">
+        <div class="ten columns">
 			<?php get_template_part( 'element-boxes', 'index' ); ?>
 		</div>
-			
+		
+		
 	</div>
 
     

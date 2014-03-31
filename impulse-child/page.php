@@ -19,7 +19,7 @@
 		<?php get_template_part( 'navigation' ); ?>
 		
 		
-			<!--middle col--><div class="five columns">
+			<!--middle col--><div class="six columns">
 		
 				<div id="middle-col">
 		            <h1><?php the_title(); ?></h1> 
