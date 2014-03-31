@@ -1,27 +1,15 @@
 <?php get_header(); ?>
 
-	<!--div id="subhead_container">
-		
-		<div class="row">
 
-		<div class="twelve columns">
-		
-		 
-			
-			</div>	
-			
-	</div></div-->
-	
-		<!--content-->
 		<div class="row" id="content_container">
 		
 		
 		<?php get_template_part( 'navigation' ); ?>
 		
 		
-			<!--middle col--><div class="six columns">
+			<!--right col--><div class="eight columns">
 		
-				<div id="middle-col">
+				<div id="right-col">
 		            <h1><?php the_title(); ?></h1> 
 
 				<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
@@ -37,11 +25,10 @@
 					<!--?php comments_template( '', true ); ?-->
 
 <?php endwhile; ?>
-	</div> <!--middle-col end-->
+	</div> <!--right-col end-->
 
 </div> <!--column end-->
-
-	<?php get_sidebar(); ?>
+<div class="one column"></div>
 
 </div>
 <!--content end-->

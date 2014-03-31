@@ -182,6 +182,7 @@ img.chiclet {
     
 .box-content {
         width: 100%;   /*ensures that the slideshow fills out the box_container*/
+        padding-left: 5%;
 }
 
 div.title-box {
