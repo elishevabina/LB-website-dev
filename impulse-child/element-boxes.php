@@ -10,7 +10,7 @@
                   <div class="row">
             <?php endif; ?>
                 
-             <div class="five columns">
+             <div class="six columns element-box">
 					
 				<div class="title-box">						
 					<?php echo '<div class="title-head" id="box-header-'.$i.'">';?>

@@ -127,16 +127,6 @@ function impulse_widgets_init() {
 		'after_title' => '</span></h3>',
 	) );
 	
-	// Area 2, located at the right sidebar.
-	register_sidebar( array(
-		'name' => __( 'Secondary Widget Area', 'impulse' ),
-		'id' => 'secondary-widget-area',
-		'description' => __( 'The secondary widget area', 'impulse' ),
-		'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
-		'before_title' => '<h3 class="widget-title"><span>',
-		'after_title' => '</span></h3>',
-	) );
-	
 	// Area 3, located in the footer. Empty by default.
 	register_sidebar( array(
 		'name' => __( 'First Footer Widget Area', 'impulse' ),

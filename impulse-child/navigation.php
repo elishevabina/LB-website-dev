@@ -1,6 +1,9 @@
+<div class="three columns" id="nav_container">
+
 <?php $navcheck = '' ; ?>
 	
-	<?php $navcheck = wp_nav_menu( array( 'container_class' => 'menu-header2', 'theme_location' => 'primary' , 'menu_id' => 'nav', 'fallback_cb' => '', 'echo' => false ) ); ?>
+	<?php $navcheck = wp_nav_menu( array( 'container_class' => 'menu-header2', 'theme_location' => 'primary' , 
+	'menu_id' => 'nav_left', 'fallback_cb' => '', 'echo' => false ) ); ?>
 
  <?php  if ($navcheck == '') { ?>
 	
@@ -10,3 +13,5 @@
 
 	</ul>
 <?php } else echo($navcheck); ?>
+
+</div>

@@ -62,10 +62,11 @@
 <?php if(is_front_page()) { ?>
 	
 	<div class="row" id="box_container">
-	<div class="four columns" >
+
 	    <?php get_template_part( 'navigation' ); ?> 
-    </div>
-        <div class="eight columns">
+	    <!--?php the_widget( 'WP_Nav_Menu_Widget' ); ?-->
+
+        <div class="nine columns">
 			<?php get_template_part( 'element-boxes', 'index' ); ?>
 		</div>
 			

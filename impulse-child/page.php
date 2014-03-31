@@ -14,11 +14,14 @@
 	
 		<!--content-->
 		<div class="row" id="content_container">
-		<?php get_sidebar(); ?>
-			
-			<!--right col--><div class="eight columns">
 		
-				<div id="left-col">
+		
+		<?php get_template_part( 'navigation' ); ?>
+		
+		
+			<!--middle col--><div class="five columns">
+		
+				<div id="middle-col">
 		            <h1><?php the_title(); ?></h1> 
 
 				<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
@@ -34,10 +37,11 @@
 					<!--?php comments_template( '', true ); ?-->
 
 <?php endwhile; ?>
-	</div> <!--left-col end-->
+	</div> <!--middle-col end-->
+
 </div> <!--column end-->
 
-
+	<?php get_sidebar(); ?>
 
 </div>
 <!--content end-->

@@ -48,3 +48,29 @@ put = put
 3/16
 "of" in function names might stand for "options framework", a framework impulse seems to use.
 
+ftp to the same ip address, login as impulse-child@limmudboston.com to go straight to the impulse-child directory.
+
+3/18
+Design note:  header can have search, links, etc. in it but only if it's the same color as the rest of the page (i.e. if it's not a separate untouchable image, but rather a part of the page.)
+
+3/19
+Impulse Theme lets you set the background color through the gui editor. I don't know how to do it through code but the existence of the option is probably why.  So don't try.  
+
+3/20
+@import in css only works if it's put before all of your css.
+Foundation arranges things in a grid, defines classes .row and .columns. 
+ 
+Options Framework options are pretty easy to add to: imitating the syntax and location, add your desired option (e.g. type="textarea") to the options.php file in the place where the rest of the options are defined.  You can also add and edit tabs in the admin gui in the same place.  These option fields will then show up in Appearance->Theme Options with the rest. Textareas allow (most) html tags, "text" does not.  
+
+Then you use the options using of_get_option() in the relevant template. I.e. of_get_option() returns the content of the option field.
+
+It's hard (impossible?) to align things vertically for a responsive layout.  Probably possible, but I'm not sure I really want the header to be responsive anyway.  Vertical alignment can be achieved by setting "line-height" to be the height of the container, because the text will be displayed in the middle of the line.
+
+3/23
+To change theme through Godaddy: in cPanel, under Databases, click phpMyAdmin.  In left navigation i305478_wp1 > wp_options > stylesheet
+
+3/24
+symptoms: works for a while, I work on it, so update style.css then get the white screen back.  Sometimes reloading in a minute or two works.
+Fixing WSoD:  
+   tried: resetting functions.php
+

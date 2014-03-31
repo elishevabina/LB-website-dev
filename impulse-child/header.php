@@ -57,6 +57,7 @@
 		
 			    <div class="row" id="menu_container" >
 		
+		<?php the_widget( 'WP_Widget_Search' ); ?>
 		
 	</div><!--menu_container end-->
 

@@ -17,13 +17,19 @@ Text Domain: impulse-child
 /*defaults*/
 body {
         color: black;
-        
         }
         
-#header_container, #slider_container, #welcome_container, #box_container, #footer-container {
-   background: transparent;
-
+#slider_container, #welcome_container, #box_container, #footer-container {
+   background: white;
 }
+
+#header_container {
+    background: transparent;
+}
+
+.row {
+    background-color: white;
+    }
 
 
 
@@ -31,12 +37,11 @@ body {
 #header_container {
         position: relative;
         height: auto;
-
 }
         
 
 #banner {
-        background-color: inherit;
+        background-color: white;
         color: black;
 }
 
@@ -66,39 +71,64 @@ img.chiclet {
         padding: 0.3em;
         }
 
-
-/*main navigation */
-
 #menu_container {  /*currently being used just as a decorative blue bar*/
         position: static;
        /* overflow: auto;*/
         padding: 0;
-        background-color: #338;
+        background-color: #adadcf;
         height: 2.5em;
+        width: 100%;
         }
+        
+#menu_container #search {
+    border: none;
+    height: 2em;
+    margin: 0.25em;
+    float: right;
+    /*margin-right: 50px;*/
+}    
+
+
+
+#menu_container #search #searchsubmit {
+    float: right;
+    display: none;
+}
+        
+        
+/*main navigation */
+
+
+#nav_container {
+    padding-left: 0;
+    }
 
 
 #nav { 
      float: none;
-     }
+     text-transform: uppercase;
+     font-family:  arial, sans;
+}
      
 #nav li {
     float: none;
     }
     
 #nav a, #nav a:visited {
-        color: black;
+        color: #338;
         font-size: 1.1em;
 }
 
 #nav li ul {
-	    color:	#000;
+	    color:	#338;
+	    visibility: visible;
+	    position: static;
 }
 
 #nav li:hover, #nav li.sfHover,
 #nav a:focus, #nav a:hover, #nav a:active {
 	outline: 0;
-	color: #aaa;
+	color: #33f;
 	
 }
 
@@ -124,13 +154,6 @@ img.chiclet {
 	color: black;
 }
 
-/*white header*/
-
-#tempButtons, #tempButtons li {
-    display: none;
-}
-
-
 
 #logo img {
         margin-bottom: 10px;
@@ -150,12 +173,11 @@ img.chiclet {
 }
 
 
-
 #header_buttons {
     display: initial;
     float: none;
 }
-/*end white header*/
+/*end  header*/
 
 
 /*Home (index.php)*/
@@ -163,12 +185,20 @@ img.chiclet {
         display: none;
 }
         
+#box_container {
+    padding-top: 0;
+    }
+    
 .box-content {
         width: 100%;   /*ensures that the slideshow fills out the box_container*/
 }
 
 div.title-box {
     text-transform: none;
+    }
+    
+.element-box {
+    padding-right: 5em;
     }
     
 /*pages*/
