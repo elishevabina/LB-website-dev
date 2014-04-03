@@ -28,6 +28,7 @@
 <!-- slider.  Display set to "none" via css; leaving this here just cause.-->
 <?php if(is_front_page()) { ?>
 
+<?php if(of_get_option('slider_boolean') != "off") { ?>
 <div id="slider_container">
 
 	<div class="row">
@@ -40,7 +41,7 @@
 	</div>
 </div>
 
-<?php } ?> <!-- slider end -->
+<?php } } ?> <!-- slider end -->
 
 
 <!--welcome:  moved to above the boxes. whole div only displays if there is a welcome text or button-->

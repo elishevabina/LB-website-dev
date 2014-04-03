@@ -175,7 +175,7 @@ img.chiclet {
 
 /*Home (index.php)*/
 #slider_container {
-        display: none;
+        display: block;
 }
         
 #box_container {

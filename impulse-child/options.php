@@ -183,6 +183,14 @@ function optionsframework_options() {
 	$options[] = array( "name" => "Slider Settings",
 						"type" => "heading");
 						
+	$options[] = array( "name" => "Slider on/off",
+						"desc" => "Select \"on\" to show a slider",
+						"id" => "slider_boolean",
+						"std" => "off",
+						"type" => "select",
+						"class" => "mini",
+						"options" => $blog_home_array );	
+	
 	$options[] = array( "name" => "Slider heading 1",
 						"desc" => "Heading for the slider.",
 						"id" => "slider_head1",
