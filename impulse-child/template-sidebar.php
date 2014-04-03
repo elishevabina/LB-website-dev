@@ -1,5 +1,5 @@
 <?php /* Template Name: Sidebar
-With sidebar widget
+With widget sidebar 
 */ ?> 
 
 
@@ -24,7 +24,7 @@ With sidebar widget
 		<?php get_template_part( 'navigation' ); ?>
 		
 		
-			<!--middle col--><div class="six columns">
+			<!--middle col--><div class="seven columns">
 		
 				<div id="middle-col">
 		            <h1><?php the_title(); ?></h1> 

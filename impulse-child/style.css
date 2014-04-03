@@ -14,12 +14,14 @@ Text Domain: impulse-child
 
 /* =Theme customization starts here
 -------------------------------------------------------------- */
-/*defaults*/
+/*general*/
 body {
         color: black;
         }
         
-.column, .columns {
+
+        
+/*.column, .columns {
     border: solid blue !important;
 }
 /*#slider_container, #welcome_container, #box_container, #footer_container {
@@ -196,10 +198,19 @@ div.title-box {
 /*pages*/
 
 /*footer*/
+#footer-widget {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 #footer-widget .widget-container h3 {
     font-size: 14px;
 }
 
 #footer-widget .textwidget p {
     font-size: 12px;
+}
+
+#footer-widget ul.xoxo {
+    margin-bottom: 0;
 }
