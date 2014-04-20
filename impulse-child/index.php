@@ -28,7 +28,7 @@
 <!-- slider.  Display set to "none" via css; leaving this here just cause.-->
 <?php if(is_front_page()) { ?>
 
-<?php if(of_get_option('slider_boolean') != "off") { ?>
+<?php if(of_get_option('slider_boolean') == "on") { ?>
 <div id="slider_container">
 
 	<div class="row">

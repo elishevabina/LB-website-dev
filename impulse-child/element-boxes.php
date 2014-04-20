@@ -12,9 +12,14 @@
 				</div></div><!--title-box and title-head close-->
 					
 				<div class="box-content">
-
+				
+				<?php if(of_get_option('box_image' . $i) != NULL) : ?>
+				    <img src="<?php echo of_get_option('box_image' . $i); ?>" />
+				<?php endif; ?>
+				
 				<?php if(of_get_option('box_text' . $i) != NULL)
 				    { echo do_shortcode( of_get_option('box_text' . $i) );} ?>
+				
 				</div> <!--box-content close-->
 					
 				<!--<span class="read-more"><a href="<?php echo of_get_option('box_link' . $i); ?>"><?php _e('Read More' , 'impulse'); ?></a></span>-->
@@ -37,7 +42,11 @@
 			</div></div><!--title-box and title-head close-->
 					
 			<div class="box-content">
-
+			
+			<?php if(of_get_option('box_image' . $i) != NULL) : ?>
+ 				<img src="<?php echo of_get_option('box_image' . $i);?>" />
+ 			<?php endif; ?>
+ 			
 				<?php if(of_get_option('box_text' . $i) != NULL)
 				    { echo do_shortcode( of_get_option('box_text' . $i) );} ?>
 			</div> <!--box-content close-->

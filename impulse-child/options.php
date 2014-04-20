@@ -189,7 +189,7 @@ function optionsframework_options() {
 						"std" => "off",
 						"type" => "select",
 						"class" => "mini",
-						"options" => $blog_home_array );	
+						"options" => $blog_home_array);	
 	
 	$options[] = array( "name" => "Slider heading 1",
 						"desc" => "Heading for the slider.",

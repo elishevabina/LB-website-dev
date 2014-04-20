@@ -17,8 +17,50 @@ Text Domain: impulse-child
 /*general*/
 body {
         color: black;
+        background-color: white;
         }
         
+h2 {
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+}
+
+h3, h4, h5 {
+    margin-bottom: 9px;
+    }
+    
+ul {
+    margin-bottom: 10px;
+    padding-bottom: .5em;
+}
+
+li {
+    background: none;
+}
+
+a, a:link {
+    color: #0A2C74;
+    text-decoration: underline;
+    
+}
+    
+a:hover, a:focus, a:active {
+    color:  #F57D1C;
+    text-decoration: underline;
+}
+
+.menu a, .menu a:link {
+    text-decoration: none;
+    }
+    
+form input[type="text"] {
+    width: 50%;
+    
+}
+
+.wp-caption-text {
+    color: black;
+}
 
         
 /*.column, .columns {
@@ -43,7 +85,6 @@ body {
         
 
 #banner {
-        background-color: white;
         color: black;
 }
 
@@ -73,11 +114,11 @@ img.chiclet {
         padding: 0.3em;
         }
 
-#menu_container {  /*currently being used just as a decorative blue bar*/
+#menu_container {  /*currently being used just as a decorative orange bar*/
         position: static;
        /* overflow: auto;*/
         padding: 0;
-        background-color: #adadcf;
+        background-color: #F57D1C; /*#adadcf;*/
         height: 2.5em;
         width: 100%;
         }
@@ -105,12 +146,15 @@ img.chiclet {
     padding-left: 0;
     }
 
+#nav_left a {
+    text-decoration: none;
+}
 
 #nav_left { 
      float: none;
      text-transform: uppercase;
      font-family:  arial, sans;
-     color: maroon;
+     color: #0A2C74;
 }
      
 #nav_left li {
@@ -131,14 +175,14 @@ img.chiclet {
 #nav_left li a:hover, 
 #nav_left a:focus, #nav_left a:hover, #nav_left a:active {
 	outline: 0;
-	color: #338;
+	color: #F57D1C;
 }
 
 
 #nav_left li ul li a:hover, 
 #nav_left li ul li a:focus, #nav_left li ul li a:hover, #nav_left li ul li a:active {
 	outline: 0;
-	color: #338;
+	/*color: #338;*/
 }
 
 
@@ -173,18 +217,24 @@ img.chiclet {
 /*end  header*/
 
 
-/*Home (index.php)*/
+/*Home (index.php) and pages*/
 #slider_container {
         display: block;
 }
         
-#box_container {
+#box_container, #content_container {	/*the whole page content, not the element boxes*/
     padding-top: 0;
     }
     
-.box-content {
-        width: 100%;   /*ensures that the slideshow fills out the box_container*/
-        padding-left: 5%;
+    
+.element-box {
+    padding-left: 5%;
+    padding-bottom: 5%;
+}
+    
+.box-content {		/*inside of individual element boxes*/
+    width: 100%;   /*ensures that the slideshow fills out the box_container*/
+        
 }
 
 div.title-box {
@@ -196,6 +246,16 @@ div.title-box {
     }
     
 /*pages*/
+
+.post-entry ul li {
+    background: none;
+}
+
+.post-entry ul.bullets li {
+    background: url(images/bullet.png) no-repeat 0 0.5em;
+}
+
+
 
 /*footer*/
 #footer-widget {
@@ -213,4 +273,9 @@ div.title-box {
 
 #footer-widget ul.xoxo {
     margin-bottom: 0;
+}
+
+#footer-widget form input[type="text"] {
+    height: 22px;
+    width: 55%;
 }
