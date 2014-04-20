@@ -29,6 +29,11 @@ h3, h4, h5 {
     margin-bottom: 9px;
     }
     
+h4 {
+    font-size: 14px;
+    font-weight: bold;
+}
+    
 ul {
     margin-bottom: 10px;
     padding-bottom: .5em;
@@ -60,6 +65,10 @@ form input[type="text"] {
 
 .wp-caption-text {
     color: black;
+}
+
+small {
+    font-size: 90%
 }
 
         
@@ -255,7 +264,15 @@ div.title-box {
     background: url(images/bullet.png) no-repeat 0 0.5em;
 }
 
+/*sidebar*/
 
+#sidebar ul  {
+	list-style: none;
+}
+
+#sidebar ul li {
+    background: none;
+}
 
 /*footer*/
 #footer-widget {
