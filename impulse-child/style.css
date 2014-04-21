@@ -39,8 +39,14 @@ ul {
     padding-bottom: .5em;
 }
 
+
 li {
     background: none;
+}
+
+ ul.bullets li {
+    padding-left: 27px;
+    background: url(images/bullet.png) no-repeat 0 0.5em;
 }
 
 a, a:link {
@@ -59,9 +65,34 @@ a:hover, a:focus, a:active {
     }
     
 form input[type="text"] {
-    width: 50%;
-    
+    width: 50%; 
 }
+
+/*copied from foundation.css .button class*/
+form input[type="submit"] {
+    -webkit-appearance:none; /*from foundation.css input[type=submit].button*/
+    border-radius: 10%;   /*from style.css .button*/
+    font-size: 95%;
+    padding: .5em 1.2em .6em;
+    margin: .5em;
+}
+
+form input[type="submit"]:hover { 
+    color: white; 
+    background-color: #2284a1; 
+}
+form input[type="submit"]:active { 
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset; 
+    -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset; 
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset; }
+    
+form input[type="submit"]:focus { 
+    -webkit-box-shadow: 0 0 4px #2ba6cb, 0 1px 0 rgba(255, 255, 255, 0.5) inset; 
+    -moz-box-shadow: 0 0 4px #2ba6cb, 0 1px 0 rgba(255, 255, 255, 0.5) inset; 
+    box-shadow: 0 0 4px #2ba6cb, 0 1px 0 rgba(255, 255, 255, 0.5) inset; 
+    color: white; 
+}
+
 
 .wp-caption-text {
     color: black;
@@ -137,9 +168,16 @@ img.chiclet {
     height: 2em;
     margin: 0.25em;
     float: right;
+   
     /*margin-right: 50px;*/
 }    
-
+#menu_container #search #s {
+    color: gray;
+}
+    
+#menu_container #search #s:focus {
+    color: black;
+}
 
 
 #menu_container #search #searchsubmit {

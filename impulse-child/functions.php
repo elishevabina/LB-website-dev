@@ -1,7 +1,7 @@
 <?php 
 
 //remove impulse's wp_title filter
-remove_filter( 'wp_title', 'impulse_filter_wp_title', 10 );
+//remove_filter( 'wp_title', 'impulse_filter_wp_title', 10 );
 
 /** filter function for wp_title 
 function impulse_child_filter_wp_title( $old_title, $sep, $sep_location ){
