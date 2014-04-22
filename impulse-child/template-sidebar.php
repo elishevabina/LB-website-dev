@@ -27,6 +27,7 @@ With widget sidebar
 			<!--middle col--><div class="seven columns">
 		
 				<div id="middle-col">
+					<?php get_template_part( 'breadcrumbs' ); ?>
 		            <h1><?php the_title(); ?></h1> 
 
 				<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>

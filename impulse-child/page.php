@@ -10,11 +10,14 @@
 			<!--right col--><div class="eight columns">
 		
 				<div id="right-col">
+					<?php get_template_part( 'breadcrumbs' ); ?>
+					
 		            <h1><?php the_title(); ?></h1> 
 
 				<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 					
 					<div class="post-entry">
+				
 
 						<?php the_content(); ?>
 						<div class="clear"></div>

@@ -21,7 +21,7 @@ body {
         }
         
 h2 {
-    margin-top: 2em;
+    margin-top: 1em;
     margin-bottom: 1.5em;
 }
 
@@ -63,7 +63,12 @@ a:hover, a:focus, a:active {
 .menu a, .menu a:link {
     text-decoration: none;
     }
-    
+
+form {
+    color: inherit;
+    font-weight: inherit;
+}
+
 form input[type="text"] {
     width: 50%; 
 }
@@ -75,24 +80,13 @@ form input[type="submit"] {
     font-size: 95%;
     padding: .5em 1.2em .6em;
     margin: .5em;
+    outline-width: 3px;
 }
 
-form input[type="submit"]:hover { 
-    color: white; 
-    background-color: #2284a1; 
+label {
+    color: inherit;
+    font-weight: inherit;
 }
-form input[type="submit"]:active { 
-    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset; 
-    -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset; 
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset; }
-    
-form input[type="submit"]:focus { 
-    -webkit-box-shadow: 0 0 4px #2ba6cb, 0 1px 0 rgba(255, 255, 255, 0.5) inset; 
-    -moz-box-shadow: 0 0 4px #2ba6cb, 0 1px 0 rgba(255, 255, 255, 0.5) inset; 
-    box-shadow: 0 0 4px #2ba6cb, 0 1px 0 rgba(255, 255, 255, 0.5) inset; 
-    color: white; 
-}
-
 
 .wp-caption-text {
     color: black;
@@ -102,16 +96,28 @@ small {
     font-size: 90%
 }
 
-        
-/*.column, .columns {
-    border: solid blue !important;
+#search {
+    height: 2em;
+    margin: 0;
+    padding: 0;
+    float: none;
+    display: inline-block;
+    
 }
-/*#slider_container, #welcome_container, #box_container, #footer_container {
-   background: white;
+    
+#search #s {
+    color: gray;
 }
-
-#header_container {
-    background: transparent;
+    
+#search #s:focus {
+    color: black;
+}
+    
+#search #searchsubmit {
+   display: inline-block;
+   margin: 0;
+   padding: 0;
+    
 }
 
 */
@@ -121,6 +127,7 @@ small {
 #header_container {
         position: relative;
         height: auto;
+        padding-bottom: 0;
 }
         
 
@@ -165,19 +172,11 @@ img.chiclet {
         
 #menu_container #search {
     border: none;
-    height: 2em;
-    margin: 0.25em;
     float: right;
+    margin: 0.25em;
    
-    /*margin-right: 50px;*/
 }    
-#menu_container #search #s {
-    color: gray;
-}
-    
-#menu_container #search #s:focus {
-    color: black;
-}
+
 
 
 #menu_container #search #searchsubmit {
@@ -265,12 +264,25 @@ img.chiclet {
 
 
 /*Home (index.php) and pages*/
+
+.crumbs {
+    position: relative;
+    top: -1.5em;
+    font-size: 80%;
+   
+  
+}
+
+.crumbs a {
+    color: #666;
+}
+
 #slider_container {
         display: block;
 }
         
 #box_container, #content_container {	/*the whole page content, not the element boxes*/
-    padding-top: 0;
+    padding-top: 2em;
     }
     
     
@@ -312,6 +324,10 @@ div.title-box {
     background: none;
 }
 
+.widget-container-primary {
+   margin-top: 2em;
+}
+
 /*footer*/
 #footer-widget {
     padding-top: 0;
@@ -333,4 +349,13 @@ div.title-box {
 #footer-widget form input[type="text"] {
     height: 22px;
     width: 55%;
+}
+
+#footer-info {
+    padding-bottom: .1em;
+}
+
+#footer-info #copyright {
+    font-size: 12px;
+    font-family: Arial, sans-serif;
 }
