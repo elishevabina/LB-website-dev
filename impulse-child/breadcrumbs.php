@@ -16,7 +16,7 @@ while ($parent_id) {
     } else {
 		$title_array = explode('-', $page->post_name);
 		$title = implode(' ', $title_array);
-		$title = ucfirst($title);
+		$title = ucwords($title);
 	}
     
     
